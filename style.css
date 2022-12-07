@@ -1,5 +1,13 @@
+@font-face {
+  font-family: "genshin";
+  font-style: normal;
+  font-weight: 400;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: url("/Genshin_Impact.ttf") format("ttf");
+}
+
 body {
-  font-family: "Helvetica";
+  font-family: "genshin";
   background-color: #f6f8fa;
   color: #24292f;
   display: flex;
@@ -20,7 +28,7 @@ body {
   margin: 30px 0 10px 0;
   font-size: 32px;
   line-height: 1.2;
-  font-family: "Helvetica Neue";
+  font-family: "genshin";
 }
 
 .header__subtitle {
@@ -36,7 +44,7 @@ body {
 }
 
 .links__header {
-  font-family: "Helvetica Neue";
+  font-family: "genshin";
   font-size: 24px;
   line-height: 1.4;
   margin: 0 0 15px 0;
