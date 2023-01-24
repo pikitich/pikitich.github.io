@@ -20,7 +20,8 @@ body {
 }
 
 #canvas {
-	position: fixed;
+  z-index: -1;
+  position: absolute;
 	left: 0;
 	top: 0;
 	width: 100%;
@@ -35,8 +36,8 @@ body {
 
 .header__avatar {
   border-radius: 50%;
+  border: 3px solid #fff;
   height: 280px;
-  border: 3px;
 }
 
 .header__title {
@@ -44,6 +45,7 @@ body {
   font-size: 32px;
   line-height: 1.2;
   font-family: "genshin";
+  text-shadow: white 1px 1px 0, white -1px -1px 0, white -1px 1px 0, white 1px -1px 0;
 }
 
 .header__subtitle {
@@ -51,6 +53,7 @@ body {
   font-size: 16px;
   line-height: 1.4;
   margin: 0;
+  text-shadow: white 1px 1px 0, white -1px -1px 0, white -1px 1px 0, white 1px -1px 0;
 }
 
 .links {
@@ -60,6 +63,7 @@ body {
 
 .links__header {
   font-family: "genshin";
+  text-shadow: white 1px 1px 0, white -1px -1px 0, white -1px 1px 0, white 1px -1px 0;
   font-size: 24px;
   line-height: 1.4;
   margin: 0 0 15px 0;
@@ -132,7 +136,7 @@ footer {
   font-size: 14px;
   line-height: 1.4;
 
-  color: #0969da;
+  color: #24292f;
   text-decoration: none;
 }
 
