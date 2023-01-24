@@ -12,12 +12,20 @@
 
 body {
   font-family: "genshin";
-  background-image: url('/background.jpg');
   color: #24292f;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+#canvas {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-image: radial-gradient(#ff3cac 0%, #784ba0 40%, #2b86c5 100%);
 }
 
 .header {
@@ -27,6 +35,8 @@ body {
 
 .header__avatar {
   border-radius: 50%;
+  height: 280px;
+  border: 3px;
 }
 
 .header__title {
