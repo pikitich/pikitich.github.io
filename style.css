@@ -12,7 +12,7 @@
 
 body {
   font-family: "genshin";
-  background-color: #f6f8fa;
+  background-image: url('/background.jpg');
   color: #24292f;
   display: flex;
   flex-direction: column;
