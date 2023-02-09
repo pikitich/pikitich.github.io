@@ -2,7 +2,7 @@
 const button = document.querySelector('button');
 
 /* Тут на кнопку навешиваем обрабочик, который ждёт клика и тогда запустит логику */
-button.addEventListener('click', function() {
+button.addEventListener('click', function () {
 	alert('А когда выкидываешь ёлку ты?🎄')
 })
 
@@ -24,8 +24,8 @@ function init() {
 }
 
 function resizeReset() {
-	w = canvas.width = window.innerWidth;
-	h = canvas.height = window.innerHeight;
+	w = canvas.width = canvas.innerWidth;
+	h = canvas.height = canvas.innerHeight;
 
 	particles = [];
 	for (let y = (((h - particleDistance) % particleDistance) + particleDistance) / 2; y < h; y += particleDistance) {
@@ -122,7 +122,10 @@ class Particle {
 	}
 }
 
-init();
-window.addEventListener("resize", resizeReset);
-window.addEventListener("mousemove", mousemove);
-window.addEventListener("mouseout", mouseout);
+document.addEventListener('DOMContentLoaded', function () {
+	init();
+	window.addEventListener("resize", resizeReset);
+	window.addEventListener("mousemove", mousemove);
+	window.addEventListener("mouseout", mouseout);
+});
+
