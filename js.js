@@ -72,7 +72,7 @@ function drawLine() {
 
 function mousemove(e) {
 	mouse.x = e.x;
-	mouse.y = e.y;
+	mouse.y = e.pageY;
 }
 
 function mouseout() {
