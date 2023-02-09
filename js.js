@@ -122,7 +122,7 @@ class Particle {
 	}
 }
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', () => {
 	init();
 	window.addEventListener("resize", resizeReset);
 	window.addEventListener("mousemove", mousemove);
