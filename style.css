@@ -12,6 +12,7 @@
 
 body {
   font-family: "genshin";
+  position: relative;
   color: #24292f;
   display: flex;
   flex-direction: column;
