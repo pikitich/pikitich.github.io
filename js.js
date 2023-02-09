@@ -1,5 +1,6 @@
 /* Это объявление переменной, мы наши кнопку по тегу */
 const button = document.querySelector('button');
+const body = document.querySelector('body');
 
 /* Тут на кнопку навешиваем обрабочик, который ждёт клика и тогда запустит логику */
 button.addEventListener('click', function () {
@@ -24,8 +25,8 @@ function init() {
 }
 
 function resizeReset() {
-	w = canvas.width = canvas.innerWidth;
-	h = canvas.height = canvas.innerHeight;
+	w = canvas.width = body.clientWidth;
+	h = canvas.height = body.clientHeight;
 
 	particles = [];
 	for (let y = (((h - particleDistance) % particleDistance) + particleDistance) / 2; y < h; y += particleDistance) {
@@ -123,6 +124,7 @@ class Particle {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+	console.log('Document loaded')
 	init();
 	window.addEventListener("resize", resizeReset);
 	window.addEventListener("mousemove", mousemove);
